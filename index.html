@@ -18,11 +18,11 @@
     </header>
     <main>
       <!--starting screen-->
-      <section id="initial-page" class="display">
+      <section id="initial-page" class="initial">
         <h1>Code Quiz</h1>
         <p>
           Welcome to the most challenging quiz you'll ever take! Think you have
-          what it takes to complete it? Press the button below to start quiz.
+          what it takes to complete it? Press button below to start quiz.
         </p>
         <h3>Rules:</h3>
         <p>Correct answer = +10 seconds <br />Incorrect answer = -10 seconds</p>
@@ -34,14 +34,16 @@
         <div id="options"></div>
       </div>
       <!--closing screen-->
+      <div id="end-page" class="hide">
       <h2>GAME OVER</h2>
       <p>Your final score is: <span id="score"></span></p>
       <p>
         Please enter your initials: <input type="text" id="initials" max="3" />
         <button id="save">Save</button>
       </p>
+      </div>
     </main>
-
+    <script src="./assets/js/quiz.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
