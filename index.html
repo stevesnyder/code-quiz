@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
+  <body>
+    <header>
+      <!--link to view previous highscores-->
+      <button id="view-highscores">
+        <a href="./scores.html">View Highscores</a>
+      </button>
+      <!--running clock showing amount of time left-->
+      <div id="time-left"></div>
+    </header>
+    <main>
+      <!--starting screen-->
+      <section id="initial-page" class="display">
+        <h1>Code Quiz</h1>
+        <p>
+          Welcome to the most challenging quiz you'll ever take! Think you have
+          what it takes to complete it? Press the button below to start quiz.
+        </p>
+        <h3>Rules:</h3>
+        <p>Correct answer = +10 seconds <br />Incorrect answer = -10 seconds</p>
+        <button id="begin">Click me to begin</button>
+      </section>
+      <!--quiz-->
+      <div id="quiz" class="hide">
+        <h2 id="question"></h2>
+        <div id="options"></div>
+      </div>
+      <!--closing screen-->
+      <h2>GAME OVER</h2>
+      <p>Your final score is: <span id="score"></span></p>
+      <p>
+        Please enter your initials: <input type="text" id="initials" max="3" />
+        <button id="save">Save</button>
+      </p>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
